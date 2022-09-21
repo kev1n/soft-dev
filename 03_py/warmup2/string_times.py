@@ -1,5 +1,6 @@
 def string_times(str, n):
-  return n*str #woah multiplication of strings
+  return n*str
+  #You can actually multiply strings!
 
 print(string_times('Hi', 2)) #→ 'HiHi'
 print(string_times('Hi', 3)) #→ 'HiHiHi'
