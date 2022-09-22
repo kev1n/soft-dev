@@ -11,3 +11,9 @@ OPS SUMMARY:
 1. 
 """
 
+krewes = {
+    2: ["Jeff", "Anna"],
+    7: ["Mom", "Grandma"],
+    8: ["Dad", "Grandpa"]
+}
+
