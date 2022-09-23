@@ -9,6 +9,7 @@ DISCO:
 * the dictionary can span multiple lines for readability
 
 QCC:
+What is a krew
 OPS SUMMARY:
 1. Have user select a period
 2. Generate a random value from 0 to the length of the array
@@ -23,12 +24,6 @@ krewes = {
     8: ["Dad", "Grandpa"]
 }
 
-def randomDevoOverall():
-    periods = list(krewes.keys())
-    randomIndex = math.floor(random.random() * len(periods))
-    randomPeriod = periods[randomIndex]
-    return randomDevoPeriod(randomDevoPeriod)
-
 def randomDevoPeriod(period):
     devos = krewes[period]
     if len(devos) == 0:
@@ -36,6 +31,12 @@ def randomDevoPeriod(period):
     else:
         index = math.floor(random.random() * len(devos))
         return devos[index]
+
+def randomDevoOverall():
+    periods = list(krewes.keys())
+    randomIndex = math.floor(random.random() * len(periods))
+    randomPeriod = periods[randomIndex]
+    return randomDevoPeriod(randomPeriod)
 
 print(randomDevoPeriod(2))
 print(randomDevoOverall())
