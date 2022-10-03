@@ -26,7 +26,7 @@ import math
 
 def parse_krewes():
     info = open('krewes.txt')
-    str_file = info.read().replace('\n','').split('@@@')
+    str_file = info.read().split('@@@')
     krewes = {}
     for i in str_file:
         temp_info = i.split('$$$')
@@ -52,7 +52,7 @@ def randomDevoPeriod(period):
     else:
         return None
 
-print(randomDevoPeriod(7))
+print(randomDevoPeriod(2))
 
 #returns a random devo across any period
 def randomDevoOverall():
