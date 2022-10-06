@@ -1,0 +1,9 @@
+v0
+Notable
+*flask is imported from flask - why not just import Flask? what is the difference
+*what is __name__?
+*is the function hello_world() automatically run without explicitly doing hello_world()
+
+Expected Behavior
+*print should print something to the terminal
+*return should be the output on the website
