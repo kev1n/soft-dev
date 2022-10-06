@@ -9,6 +9,7 @@ app = Flask(__name__) #create instance of class Flask
 def hello_world():
     print("about to print __name__...")
     print(__name__)   #where will this go?
+    print(5/0)
     return "No hablo queso!"
 
 app.debug = True
