@@ -1,27 +1,27 @@
 # v0
 
 ## Notable
-*flask is imported from flask - why not just import Flask? what is the difference
-*what is __name__?
-*is the function hello_world() automatically run without explicitly doing hello_world()
-*CTRL+C to close the website
-*what is a production WSGI server?
-*what is debug mode and how do you turn it on?
-*what does 200 represent?
+* flask is imported from flask - why not just import Flask? what is the difference
+* what is __name__?
+* is the function hello_world() automatically run without explicitly doing hello_world()
+* CTRL+C to close the website
+* what is a production WSGI server?
+* what is debug mode and how do you turn it on?
+* what does 200 represent?
 
 ## Expected Behavior
-*print should print something to the terminal
-*return should be the output on the website
+* print should print something to the terminal
+* return should be the output on the website
 
 ## Actual Behavior
-*__main__ is printed to the terminal
+* __main__ is printed to the terminal
 * No hablo queso! is displayed on the website
 
 # v1
 
 ## Notable
-*app = Flask(__name__) looks like making an instance of a Java class -> Flask is a class?
-*hello_world is bound to the route of "/" so it's automatically ran when "/" is requested
+* app = Flask(__name__) looks like making an instance of a Java class -> Flask is a class?
+* hello_world is bound to the route of "/" so it's automatically ran when "/" is requested
 
 ## Expected Behavior
 same as v0 except no printing
@@ -32,11 +32,11 @@ same as v0 except no printing
 # v2
 
 ## Notable
-*same as v0 and v1
-*__name__ is __main__
+* same as v0 and v1
+* __name__ is __main__
 
 ## Expected Behavior
-*"about to print __name__... \n __main__" to the console
+* "about to print __name__... \n __main__" to the console
 * No hablo queso! is displayed on the website
 
 ## Actual Behavior
@@ -45,12 +45,12 @@ same as v0 except no printing
 # v3
 
 ## Notable
-*app.debug is set to True, whereas it was false before
-*syntax is similar to setting java field in a class for app.debug -> confirms app is an instance of Flask
-*when the code changes, the website is refreshed with the new code now
+* app.debug is set to True, whereas it was false before
+* syntax is similar to setting java field in a class for app.debug -> confirms app is an instance of Flask
+* when the code changes, the website is refreshed with the new code now
 
 ## Expected Behavior
-* expect "Debug mode: on" to be printed to the terminal
+* expecExpected Behaviort "Debug mode: on" to be printed to the terminal
 * same other ## Expected Behavior as v2 in addition to debug mode
 
 ## Actual Behavior
@@ -64,10 +64,10 @@ same as v0 except no printing
 # v4
 
 ## Notable
-"if __name__ == "__main__":" line - why is this necessary? is it necessary?
+* "if __name__ == "__main__":" line - why is this necessary? is it necessary?
 
 ## Expected Behavior
-*the same as v3 because __name__ should be equal to "__main__"
+* the same as v3 because __name__ should be equal to "__main__"
 
 ## Actual Behavior
-*same as expected
+* same as expected
