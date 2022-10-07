@@ -1,6 +1,22 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
+"""
+TEAM FLASKERS - Harry ZHu, Kevin Wang, Daniel He
+SoftDev
+k05 -- Using a flask app to return a random occupation on a website
+2022-10-07
+time spent: 1.5 hrs
+
+Disco:
+* f strings to insert the result of python code into a string
+* how to use modules (using github guide)
+* flask must have one return value so use a string with HTML to parse multiple outputs
+
+
+QCC:
+* 
+
+HOW THIS SCRIPT WORKS:
+1. 
+"""
 
 from flask import Flask
 import occupation #this is a copy of 06_py_csv
