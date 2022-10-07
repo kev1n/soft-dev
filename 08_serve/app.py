@@ -12,7 +12,7 @@ Disco:
 
 
 QCC:
-* 
+* __x__ is some special syntax in markdown
 
 HOW THIS SCRIPT WORKS:
 1. 
