@@ -35,7 +35,7 @@ for oc in occupations:
 
 @app.route("/")       #assign fxn to route
 def random_occupation():
-    return_value = "TEAM FLASKERS - Harry ZHu, Kevin Wang, Daniel He </br>"
+    return_value = "TEAM FLASKERS - Harry Zhu, Kevin Wang, Daniel He </br>"
 
     return_value += f"<h1> {occupation.get_random_occupation()} </h1></br>"
 
