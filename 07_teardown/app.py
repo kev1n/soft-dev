@@ -1,5 +1,10 @@
-# your heading here
-
+"""
+I dropped my pen - Samson Wu & Kevin Wang
+SoftDev
+k07 -- discovering flask
+2022-10-04
+time spent: 0.75 hrs
+"""
 from flask import Flask
 
 app = Flask(__name__) # Q0: Where have you seen similar syntax in other langs?

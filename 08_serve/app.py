@@ -1,7 +1,7 @@
 """
 TEAM FLASKERS - Harry ZHu, Kevin Wang, Daniel He
 SoftDev
-k05 -- Using a flask app to return a random occupation on a website
+k08 -- Using a flask app to return a random occupation on a website
 2022-10-07
 time spent: 1.5 hrs
 
