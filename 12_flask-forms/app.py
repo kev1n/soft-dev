@@ -1,5 +1,5 @@
 """
-Team Foo Bar - Kevin Wang and Wan Ying Li
+Team Foo Bar - Ameer Alnasser Wan Ying Li and Kevin Wang
 SoftDev
 K12 -- establishing how to extract data from POST and GET, and how they work
 2022-10-17
