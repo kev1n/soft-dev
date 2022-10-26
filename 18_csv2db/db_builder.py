@@ -1,7 +1,11 @@
-#Clyde "Thluffy" Sinclair
-#SoftDev  
-#skeleton/stub :: SQLITE3 BASICS
-#Oct 2022
+"""
+Foo Bar:: Ameer Alnasser, Wan Ying Li, Kevin Wang
+SoftDev
+k18 -- integrating sqlite3 into python
+2022-10-26
+time spent: 0.8 hrs
+"""
+
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O
