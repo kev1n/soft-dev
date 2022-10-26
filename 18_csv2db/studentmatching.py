@@ -36,13 +36,18 @@ def students_to_db():
 courses_to_db()
 students_to_db()
 c.execute("SELECT * FROM courses;")
-print(c.fetchall())
+#print(c.fetchall())
 c.execute("SELECT * FROM students;")
-print(c.fetchall())
+#print(c.fetchall())
 
 #==========================================================
+db.execute(f'SELECT id FROM students WHERE name="{"alison"}"')
+print(c.fetchone())
+
+#def name_to_id(name):
+
+
+
 
 db.commit() #save changes
 db.close()  #close database
-
-
