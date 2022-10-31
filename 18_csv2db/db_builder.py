@@ -24,8 +24,9 @@ def courses_to_db():
         reader = csv.DictReader(csvfile)
 
         db.execute("DROP TABLE if exists courses;")
-        c.execute("CREATE TABLE courses(code TEXT, mark INTEGER, id INTEGER);")
+        c.execute("CREATE TABLE courses(code TEXT, mark INTEGER, id PRIMARY KEY INTEGER);")
         for row in reader:
+            c.execute(f'INSERT INTO courses VALUES("{row.get("code")}", {row.get("mark")}, {row.get("id")});')
             c.execute(f'INSERT INTO courses VALUES("{row.get("code")}", {row.get("mark")}, {row.get("id")});')
 
 def students_to_db():
