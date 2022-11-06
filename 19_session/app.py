@@ -43,6 +43,8 @@ def login():
             return render_template("login.html", username = request.form["username"], error_message="user doesn't exist")
         elif (CORRECT_username.lower() == request.form["username"].lower() and CORRECT_password != request.form["password"]):
             return render_template("login.html", username = request.form["username"], error_message="incorrect password")
+        else:
+            return render_template("login.html", username = request.form["username"], error_message="juju madness")  
         
     else: #when accessing /login for the first time
         if 'username' in session: #ensure the user isn't already signed in
