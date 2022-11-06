@@ -32,9 +32,8 @@ time spent: 0.8 hrs
         <p>username: lol</p>
         <p>password: lol</p>
         
-        {% if username %}
-        <p>wrong username or password</p>
-        {% endif%}
+        <p>{{error_message}}</p>
+
       </form>
 
   </body>

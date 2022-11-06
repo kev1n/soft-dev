@@ -38,8 +38,11 @@ def login():
         if (CORRECT_username.lower() == request.form["username"].lower() and CORRECT_password == request.form["password"]): #username/password auth
             session['username'] = request.form['username']
             return redirect(url_for('index'))
-        else:
-            return render_template("login.html", username = request.form["username"])
+        #when username/password combo is wrong
+        elif (CORRECT_username.lower() != request.form["username"].lower()):
+            return render_template("login.html", username = request.form["username"], error_message="user doesn't exist")
+        elif (CORRECT_username.lower() == request.form["username"].lower() and CORRECT_password != request.form["password"]):
+            return render_template("login.html", username = request.form["username"], error_message="incorrect password")
         
     else: #when accessing /login for the first time
         if 'username' in session: #ensure the user isn't already signed in
