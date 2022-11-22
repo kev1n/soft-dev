@@ -1,37 +1,31 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
+"""
+One Day One Dream Team:: Wan Ying Li, Kevin Wang
+SoftDev
+k20-- RESTful API
+2022-11-21
+time spent: 0.5 hrs
+"""
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
-from flask import request           #facilitate form submission
-
+#from flask import request           #facilitate form submission
+import requests
 #the conventional way:
 #from flask import Flask, render_template, request
 
 app = Flask(__name__)    #create Flask object
 
 
-'''
-trioTASK:
-~~~~~~~~~~~ BEFORE RUNNING THIS, ~~~~~~~~~~~~~~~~~~
-...read for understanding all of the code below.
-Some will work as written; other sections will not. 
-TASK: Predict which...
-Devise some simple tests you can run to "take apart this engine," as it were.
-Execute your tests.
-Process results.
-
-PROTIP: Insert your own in-line comments
- wherever they will help
-  your future self and/or current teammates
-   understand what is going on.
-'''
-
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
-    
-    return render_template( 'main.html', img_link="/")
+    with open("key_nasa.txt", "r") as file:
+        api_key = file.read()
+        request = requests.get(f"https://api.nasa.gov/planetary/apod?api_key={api_key}")
+        info = request.json() #dictionary version of the request
+        img = info["hdurl"]
+        explanation = info["explanation"]
+        #print(info)
+        return render_template('main.html', img_link=img, explanation=explanation)
 
 
     
