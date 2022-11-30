@@ -1,9 +1,9 @@
 # Team
-Blue Guinea Pigs:: Wan Ying Li, Faiyaz Rafee, Kevin Wang
-SoftDev
-k23-- Bootstrap features
-2022-11-28
-time spent: 1.0 hrs
+Blue Guinea Pigs:: Wan Ying Li, Faiyaz Rafee, Kevin Wang  
+SoftDev  
+k23-- Bootstrap features  
+2022-11-28  
+time spent: 1.0 hrs  
 
 # Discoveries
 
