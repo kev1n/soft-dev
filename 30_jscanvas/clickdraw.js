@@ -1,7 +1,7 @@
 var c = document.getElementById("slate");
 
 var ctx = c.getContext("2d");
-ctx.fillStyle = "red"
+ctx.fillStyle = "green"
 
 var mode = "rect";
 
