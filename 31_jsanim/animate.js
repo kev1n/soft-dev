@@ -25,6 +25,8 @@ var drawCircle = (radius) => {
 var drawDot = () => {
     clear();
 
+    window.cancelAnimationFrame(requestID);
+    
     if (growing) {
         radius += 1
     } else {
@@ -44,15 +46,8 @@ var drawDot = () => {
 }
 
 var stopIt = () => {
-    console.log("stopIt invoked...")
-    console.log(requestID);
     requestID = window.cancelAnimationFrame(requestID);
 }
 
-dotButton.addEventListener("click", () => {
-    window.cancelAnimationFrame(requestID);
-    drawDot();
-    requestID = window.requestAnimationFrame(growDot);
-
-});
+dotButton.addEventListener("click", drawDot);
 stopButton.addEventListener("click", stopIt);
